@@ -1,2 +1,415 @@
-# recipebook.html
-practice html/css from khan academy tutorial
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project: Recipe book</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@1&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+        <style>
+           body {
+               background-color: #F0EFEB;
+           }
+           
+           h1 {
+               color: #A5A58D;
+               font-family: 'Arapey', serif;
+               font-size: 64px;
+               text-align: center;
+               border: 1px solid;
+               background-color: #EDDCD2;
+           }
+           
+           h2 {
+               font-size: 30px;
+           }
+           
+           h2, ul {
+               color: #DDBEA9;
+               padding: 20px;
+               font-family: 'Arapey', serif;
+           }
+           
+           ul {
+               margin-left: 90px;
+               margin-bottom: -10px;
+               font-size: 20px;
+               font-family: 'Montserrat', sans-serif;
+           }
+           
+           .recipe-titles {
+               color: #A5A58D;
+               margin-left: 40px;
+               margin-right: 40px;
+               border: 1px solid;
+               padding: 20px 20px;
+               text-align: center;
+               font-size: 50px;
+               background-color: #FFF1E6;
+           }
+           
+           p {
+               margin-left: 90px;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+           }
+           
+           p, .source {
+               color: #DDBEA9;
+           }
+           
+           .source:hover {
+               color: #FFF1E6;
+           } 
+           
+           .source:visited {
+               color: #B7B7A4;
+           }
+           
+           ol li a:hover {
+               color: #FFF1E6;
+           }
+           
+           ol li a:visited {
+               color: #B7B7A4;
+           }
+           
+           ol li a {
+               color: #B7B7A4;
+           }
+           
+           ol li {
+               color: #DDBEA9;
+               font-size: 18px;
+               font-family: 'Montserrat', sans-serif;
+           }
+           
+           table {
+               color: #A5A58D;
+               padding: 15px;
+               border: solid 2px;
+               margin-left: 80px;
+               background-color: #FFF1E6;
+           }
+           
+           th {
+               border: solid 1px;
+               padding: 5px;
+               margin: 5px;
+               background-color: #F0EFEB;
+               font-family: 'Arapey', serif;
+               font-size: 19px;
+           }
+           
+           td {
+               margin: 10px;
+               padding: 10px;
+               font-family: 'Montserrat', sans-serif;
+               font-size: 15px;
+           }
+           
+           #cauli-mash-pic {
+               padding: 30px;
+               margin: 25px;
+               margin-left: -25px;
+               margin-bottom: 80px;
+               margin-top: -80px;
+               float: right;
+           }
+           
+           #scampi-pic {
+               padding: 30px;
+               margin: 25px;
+               margin-left: -25px;
+               margin-bottom: 80px;
+               margin-top: -80px;
+               float: right;
+           }
+           
+           #bean-soup-pic {
+               padding: 30px;
+               margin: 25px;
+               margin-left: -25px;
+               margin-bottom: 80px;
+               margin-top: -80px;
+               float: right;
+           }
+           
+            
+        </style>
+    </head>
+    <body>
+       
+        <h1><strong>Dimitra's Recipe Book</strong></h1>
+        
+        <h2>Contents:</h2>
+        
+        <ol>
+            <li><a id="mashed-cauliflower" href="#first-recipe">Art Smith's Garlic Mashed Cauliflower (Courtesy of Trisha Yearwood)</a></li>
+            <li><a id="shrimp-scampi" href="#second-recipe">Lightened-Up Shrimp Scampi (Courtesy of Food Network Kitchen)</a></li>
+            <li><a id="bean-soup" href="#third-recipe">10-Minute White Bean Soup with Toasted Cheese and Tomato (Courtesy of Food Network Kitchen)</a></li>
+        </ol>
+    <br>
+    <br>
+        <h2 class="recipe-titles" id="first-recipe">Art Smith's Garlic Mashed Cauliflower</h2>
+        
+        <ul>
+            <li>Level: Easy</li>
+            <li>Time: <b>Total:</b> 20 min; <b>Active:</b> 10 min</li>
+            <li>Serves: 4</li>
+        </ul>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Mash_Potatoes.jpg" id="cauli-mash-pic" alt="mashed cauliflower in a bowl with chives and butter" width="550">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>medium head of cauliflower, chopped</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Kosher salt</td>
+                    <td>To taste</td>
+                </tr>
+                <tr>
+                    <td>chicken stock</td>
+                    <td>1/4 cup</td>
+                </tr>
+                <tr>
+                    <td>grated Italian cheese, such as Parmesan</td>
+                    <td>2 Tablespoons</td>
+                </tr>
+                <tr>
+                    <td>extra-virgin olive oil</td>
+                    <td>1 Tablespoon</td>
+                </tr>
+                <tr>
+                    <td>nonfat Greek yogurt</td>
+                    <td>1 Tablespoon</td>
+                </tr>
+                <tr>
+                    <td>garlic, smashed and chopped</td>
+                    <td>1 clove</td>
+                </tr>
+                <tr>
+                    <td>black pepper</td>
+                    <td>Freshly ground</td>
+                </tr>
+                <tr>
+                    <td>rosemary, chopped, for garnish</td>
+                    <td>Fresh</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    <br>
+    <br>
+    
+        <p><strong>Step 1:</strong> Add the cauliflower and a pinch of salt to a boiling pot of water and cook until cooked through and very tender, about 10 minutes.
+</p>
+         <p><strong>Step 2:</strong> Drain well and quickly dry well with paper towels. 
+</p>
+         <p><strong>Step 3:</strong> Add the hot cauliflower to a food processor with the chicken stock, cheese, olive oil, yogurt and garlic and process until smooth.
+</p>
+         <p><strong>Step 4:</strong> Stir in a pinch of salt and pepper and the chopped rosemary, and serve immediately.
+</p>
+    <p><em>Source: <a class="source" href="https://www.foodnetwork.com/recipes/trisha-yearwood/art-smiths-garlic-mashed-cauliflower-2282175">Food Network Recipes</a></em></p>
+
+<br>
+
+    <h2 class="recipe-titles" id="second-recipe">Lightened-Up Shrimp Scampi</h2>
+        
+        <ul>
+            <li>Level: Easy</li>
+            <li>Time: <b>Total:</b> 37 min; <b>Prep:</b> 25 min</li>
+            <li>Serves: 5</li>
+        </ul>
+        
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Shrimp_scampi_food.jpg" id="scampi-pic" alt="bowl of shrimp scampi" width="450">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>multi-grain spaghetti</td>
+                    <td>6 ounces</td>
+                </tr>
+                <tr>
+                    <td>multi-grain croutons, crushed</td>
+                    <td>1/4 cup</td>
+                </tr>
+                <tr>
+                    <td>chopped fresh flat-leaf parsley</td>
+                    <td>1/4 cup</td>
+                </tr>
+                <tr>
+                    <td>grated lemon zest/td>
+                    <td>1 1/2 Tablespoons</td>
+                </tr>
+                <tr>
+                    <td>olive oil</td>
+                    <td>1 Tablespoon</td>
+                </tr>
+                <tr>
+                    <td>shallot, thinly sliced</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>garlic, minced</td>
+                    <td>1 clove</td>
+                </tr>
+                <tr>
+                    <td>crushed red pepper</td>
+                    <td>1/4 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>large shrimp, shelled and deveined (about 16 large shrimp, 21 to 25 count)</td>
+                    <td>3/4 pound</td>
+                </tr>
+                <tr>
+                    <td>salt</td>
+                    <td>1/4 teaspoon</td>
+                </tr>
+                <tr>
+                    <td>low sodium chicken broth</td>
+                    <td>1/4 cup</td>
+                </tr>
+                <tr>
+                    <td>dry white wine</td>
+                    <td>1/4 cup</td>
+                </tr>
+                <tr>
+                    <td>lemon juice</td>
+                    <td>1 tablespoon</td>
+                </tr>
+                <tr>
+                    <td>black pitted and chopped olives such as Kalamata</td>
+                    <td>6 (about 1 tablespoon)</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    <br>
+    <br>
+    
+        <p><strong>Step 1:</strong> Cook the spaghetti according to package directions. Drain; set aside.
+</p>
+         <p><strong>Step 2:</strong> Meanwhile, combine the croutons, 1/2 tablespoon of the parsley, and 1 tablespoon of the zest in a small bowl; set aside.
+</p>
+         <p><strong>Step 3:</strong> Heat the oil in a large nonstick skillet over medium heat. Add the shallot, garlic, and red pepper. Cook, stirring until the shallots are soft, about 1 minute. Add the shrimp and the salt, and cook, over medium-high heat, turning occasionally, until the shrimp are opaque, 1 to 2 minutes. Stir in the broth, wine, lemon juice, and olives. Bring to a boil and cook for 1 minute, then reduce the heat to medium. Stir in the spaghetti, the remaining 3 tablespoons parsley, and the remaining 1/2 tablespoon zest, tossing to coat well; remove from the heat.
+</p>
+         <p><strong>Step 4:</strong> Transfer to a large bowl. Sprinkle with the crouton mixture. Serve at once.
+</p>
+    <p><em>Source: <a class="source" href="https://www.foodnetwork.com/recipes/food-network-kitchen/lightened-up-shrimp-scampi-2012108">Food Network Recipes</a></em></p>
+    
+    <br>
+    
+        <h2 id="third-recipe" class="recipe-titles">10-Minute White Bean Soup with Toasted Cheese and Tomato</h2>
+        
+        <ul>
+            <li>Level: Easy</li>
+            <li>Time: <b>Total:</b> 10 min; <b>Prep:</b> 4 min</li>
+            <li>Serves: 4</li>
+        </ul>
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Chicken_soup.jpg/1200px-Chicken_soup.jpg" id="bean-soup-pic" alt="white bean soup" width="550">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>dry white wine</td>
+                    <td>1/2 cup</td>
+                </tr>
+                <tr>
+                    <td>fresh rosemary, each about 6 inches long</td>
+                    <td>2 sprigs</td>
+                </tr>
+                <tr>
+                    <td>fresh thyme</td>
+                    <td>2 sprigs</td>
+                </tr>
+                <tr>
+                    <td>low-sodium chicken or vegetable broth</td>
+                    <td>2 1/2 cups</td>
+                </tr>
+                <tr>
+                    <td>cannellini or other white beans, strained and rinsed</td>
+                    <td>Two 15-ounce cans</td>
+                </tr>
+                <tr>
+                    <td>shallot, peeled, trimmed, halved</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>garlic, peeled, trimmed, halved</td>
+                    <td>1 clove</td>
+                </tr>
+                <tr>
+                    <td>olive oil</td>
+                    <td>1 tablespoon</td>
+                </tr>
+                <tr>
+                    <td>unsalted butter</td>
+                    <td>1 tablespoon</td>
+                </tr>
+                <tr>
+                    <td>Kosher salt & freshly ground pepper</td>
+                    <td>to taste</td>
+                </tr>
+                <tr>
+                    <td>crusty sourdough bread</td>
+                    <td>4 slices</td>
+                </tr>
+                <tr>
+                    <td>shredded part-skim mozzarella cheese</td>
+                    <td>3/4 cup</td>
+                </tr>
+                <tr>
+                    <td>plum tomatoes, seeded and chopped</td>
+                    <td>2 (about 1 cup)</td>
+                </tr>
+                <tr>
+                    <td>grated Parmesan</td>
+                    <td>1/4 cup</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    <br>
+    <br>
+    
+        <p><strong>Step 1:</strong> Position a rack about 4 inches from the broiler heat source, and preheat. Bring the wine, rosemary, thyme and 2 cups of the chicken broth to a boil in a covered medium saucepan over high heat. Reduce to a bare simmer.
+</p>
+         <p><strong>Step 2:</strong> Puree the beans, shallots, garlic, oil, butter, remaining 1/2 cup chicken broth, 1/2 teaspoon salt, a few grinds of pepper and 1/2 cup of the simmering broth in a blender until completely smooth and emulsified, about 2 minutes.
+</p>
+         <p><strong>Step 3:</strong> Meanwhile, lay the bread slices on a rimmed baking sheet, and top evenly with the mozzarella. Broil until the tops are browned and bubbling, 1 to 2 minutes; remove from the oven. Divide the tomatoes evenly among the toasts, and top with the Parmesan.
+</p>
+         <p><strong>Step 4:</strong> Remove the herb sprigs from the simmering broth; set aside. Whisk the bean puree into the broth, and return it to a gentle boil. Ladle the soup into bowls, and garnish with the reserved herb sprigs and a few grinds of black pepper. Serve with the cheese toasts.
+</p>
+            <p><em>When blending hot liquid, first let it cool for five minutes or so, then transfer it to a blender, filling only halfway. Put the lid on, leaving one corner open. Cover the lid with a kitchen towel to catch splatters, and pulse until smooth.</em></p>
+            
+    <p><em>Source: <a class="source" href="https://www.foodnetwork.com/recipes/food-network-kitchen/10-minute-white-bean-soup-with-toasted-cheese-and-tomato-3362867">Food Network Recipes</a></em></p>
+    
+<br>    
+
+    </body>
+</html>
